@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Text Replacer</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <meta name="author" content="Ethan Knotts">
+</head>
+
+<body>
+  <header>
+    <h1>Welcome!</h1>
+  </header>
+
+  <section>
+    <div class="container">
+      <p class="introText">To use this application, input the text you would like to replace and the text you would like to replace it with.</p>
+      <p class="introText">Then, input the text you will change and press the button below. New text should be written.</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <section>
+    <div class="container">
+      <input class="textToReplace input" name="textToReplace" placeholder="Text To Replace">
+    </div>
+
+    <div class="container">
+      <input class="textReplacement input" name="textReplacement" placeholder="Text To Replace With">
+    </div>
+
+    <div class="container">
+      <textarea class="text input" name="text" placeholder="Your Text" rows="10" cols="50"></textarea>
+    </div>
+
+    <div class="container">
+      <button class="input" id="myButton">Get New Text</button>
+    </div>
+    
+    <div class="container">
+      <textarea class="newText input" name="newText" placeholder="New Text" rows="10" cols="50"></textarea>
+    </div>
+  </section>
+
+  <script src="sketch.js"></script>
+</body>
+
+</html>
